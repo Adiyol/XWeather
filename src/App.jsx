@@ -38,7 +38,7 @@ function App() {
       <Card title="Temperature" value={weatherResponse.current.temp_c + "C"}/>
       <Card title="Humidity" value={weatherResponse.current.humidity + "%"}/>
       <Card title="Condition" value={weatherResponse.current.condition.text}/>
-      <Card title="WInd Speed" value={weatherResponse.current.wind_kph + " kph"}/>
+      <Card title="Wind Speed" value={weatherResponse.current.wind_kph + " kph"}/>
        
    </>
     )}
