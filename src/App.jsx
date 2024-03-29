@@ -34,13 +34,13 @@ function App() {
     <input type="text" placeholder="Enter city name" value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
     <button onClick={() => getWeather(searchText)}>Search</button>
     {loading ? <p>Loading data...</p> : weatherResponse === undefined ? null : (
-      <>
+      <div className="weather-cards">
       <Card title="Temperature" value={weatherResponse.current.temp_c + "C"}/>
       <Card title="Humidity" value={weatherResponse.current.humidity + "%"}/>
       <Card title="Condition" value={weatherResponse.current.condition.text}/>
       <Card title="Wind Speed" value={weatherResponse.current.wind_kph + " kph"}/>
        
-   </>
+   </div>
     )}
   </>;
 }
